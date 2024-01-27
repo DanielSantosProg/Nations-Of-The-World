@@ -3,15 +3,6 @@
 import React from "react";
 import { Sidebar } from "flowbite-react";
 import { FiSearch, FiUsers, FiFlag } from "react-icons/fi";
-import {
-  HiArrowSmRight,
-  HiChartPie,
-  HiInbox,
-  HiShoppingBag,
-  HiTable,
-  HiUser,
-  HiViewBoards,
-} from "react-icons/hi";
 
 function SideBar() {
   return (
