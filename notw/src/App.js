@@ -1,3 +1,5 @@
+// App.js
+
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SideBar from "./Components/Sidebar/Sidebar";
@@ -21,18 +23,25 @@ function App() {
   }, []);
 
   return (
-    <div className="App flex">
-      <SideBar className="max-w-4" />
-      <BrowserRouter>
-        <div className="container">
-          <Routes>
-            <Route path="/" element={<Home Countries={countries} />} />
-            <Route path="/search" element={<Search Countries={countries} />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/country/:name" element={<Country />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
+    <div className="flex h-screen">
+      {/* Sidebar */}
+      <SideBar className="w-48 bg-gray-800" />
+      {/* Main content */}
+      <div className="flex justify-center overflow-hidden">
+        <BrowserRouter>
+          <div className="flex justify-center">
+            <Routes>
+              <Route path="/" element={<Home Countries={countries} />} />
+              <Route
+                path="/search"
+                element={<Search Countries={countries} />}
+              />
+              <Route path="/about" element={<About />} />
+              <Route path="/country/:name" element={<Country />} />
+            </Routes>
+          </div>
+        </BrowserRouter>
+      </div>
     </div>
   );
 }

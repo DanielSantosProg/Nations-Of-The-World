@@ -20,9 +20,6 @@ const Home = (countries) => {
     <div className="w-3/5 h-3/5 flex flex-col my-4 items-center">
       <h2 className="text-gray-600 mb-4">Home Page</h2>
       <CarouselSlide />
-      {/* {countries && countries.Countries && (
-        <p>Country name: {chosenCountry.name.common}</p>
-      )} */}
       <Button className="my-4" color="dark" onClick={handleRandomCountry}>
         <SlMap className="mx-2" />
         Random Country

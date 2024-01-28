@@ -19,7 +19,7 @@ function CarouselSlide() {
             </p>
           </Link>
         </div>
-        <div className="relative text-center w-fit">
+        <div className="relative text-center">
           <Link to="country/usa" className="block relative">
             <img
               src="https://img.freepik.com/fotos-gratis/a-bandeira-dos-eua-ou-estados-unidos-da-america-em-um-mastro-de-bandeira-perto-de-arranha-ceus-sob-um-ceu-nublado_181624-5054.jpg"
