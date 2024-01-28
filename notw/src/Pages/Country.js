@@ -17,7 +17,7 @@ const Country = () => {
 
   return (
     <div>
-      {!country && <p>Não encontramos o país</p>}
+      {!country && <p>Couldn't find the country</p>}
       {country && (
         <div>
           <p className="my-2 uppercase">
