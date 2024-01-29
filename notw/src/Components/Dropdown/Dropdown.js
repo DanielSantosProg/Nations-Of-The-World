@@ -4,7 +4,7 @@ import { Dropdown } from "flowbite-react";
 function RegionDropdown({ region, setRegion }) {
   return (
     <Dropdown
-      label={region ? `${region}` : "Select Region"}
+      label={region ? `${region}` : "SELECT REGION"}
       inline
       dismissOnClick={true}
     >

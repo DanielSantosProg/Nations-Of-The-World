@@ -30,7 +30,7 @@ const Country = () => {
             alt={`${country.name.common} flag`}
           />
           <h2 className="font-semibold my-2">Flag description:</h2>
-          <p className="mb-2 w-9/12 text-sm">{country.flags.alt}</p>
+          <p className="mb-2">{country.flags.alt}</p>
           <div className="flex justify-between w-4/5">
             <div className="flex flex-col my-4 items-center w-6/12">
               <h2 className="font-semibold mb-2">Official name:</h2>

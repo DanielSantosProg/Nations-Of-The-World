@@ -11,6 +11,7 @@ import Search from "./Pages/Search";
 import About from "./Pages/About";
 import Country from "./Pages/Country";
 import List from "./Pages/List";
+import SearchBar from "./Components/SearchBar/SearchBar";
 
 function App() {
   const [countries, setCountries] = useState(null);
@@ -32,14 +33,11 @@ function App() {
       {/* Main content */}
       <div className="flex justify-center overflow-hidden w-full">
         <BrowserRouter>
-          <div className="flex justify-center w-full overflow-auto">
+          <div className="flex justify-center w-full overflow-auto bg-gradient-to-b from-white to-gray-200">
             <Routes>
               <Route path="/" element={<Home Countries={countries} />} />
               <Route path="/list" element={<List Countries={countries} />} />
-              <Route
-                path="/search"
-                element={<Search Countries={countries} />}
-              />
+              <Route path="/search" element={<Search />} />
               <Route path="/about" element={<About />} />
               <Route path="/country/:name" element={<Country />} />
             </Routes>

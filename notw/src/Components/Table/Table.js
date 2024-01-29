@@ -10,10 +10,10 @@ function TableList({ countries }) {
     <div className="overflow-x-auto">
       <Table hoverable>
         <Table.Head>
-          <Table.HeadCell>Country Name</Table.HeadCell>
-          <Table.HeadCell>Flag</Table.HeadCell>
-          <Table.HeadCell>Sub Region</Table.HeadCell>
-          <Table.HeadCell></Table.HeadCell>
+          <Table.HeadCell className="bg-slate-200">Country Name</Table.HeadCell>
+          <Table.HeadCell className="bg-slate-200">Flag</Table.HeadCell>
+          <Table.HeadCell className="bg-slate-200">Sub Region</Table.HeadCell>
+          <Table.HeadCell className="bg-slate-200"></Table.HeadCell>
         </Table.Head>
         <Table.Body className="divide-y">
           {countries &&

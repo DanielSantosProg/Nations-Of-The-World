@@ -9,7 +9,7 @@ function SideBar() {
     <div className="min-h-screen">
       <Sidebar aria-label="Sidebar with logo branding example">
         <a href="/">
-          <p className="uppercase my-2 mx-4 drop-shadow-md contrast-125 ">
+          <p className="uppercase my-4 mx-4 drop-shadow-md contrast-125 ">
             <span className="text-red-500 font-bold">Nations</span> of the world
           </p>
         </a>

@@ -19,9 +19,14 @@ const List = () => {
 
   return (
     <div className="w-full flex flex-col my-4 items-center">
-      <h2 className="mb-4">Country List</h2>
+      <h2 className="mb-4">
+        <span className="text-red-500 drop-shadow-md contrast-125">
+          COUNTRY{" "}
+        </span>
+        LIST
+      </h2>
       <div>
-        <div className="mb-2 ml-6">
+        <div className="mb-2 ml-6 text-slate-600">
           <RegionDropdown region={region} setRegion={setRegion} />
         </div>
         {region && countries ? <TableList countries={countries} /> : ""}
