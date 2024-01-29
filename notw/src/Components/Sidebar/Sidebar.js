@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Sidebar } from "flowbite-react";
-import { FiSearch, FiUsers, FiFlag } from "react-icons/fi";
+import { FiSearch, FiUsers, FiHome, FiList } from "react-icons/fi";
 
 function SideBar() {
   return (
@@ -15,20 +15,28 @@ function SideBar() {
         </a>
         <Sidebar.Items>
           <Sidebar.ItemGroup>
+            <Sidebar.Item className="text-sm hover:bg-gray-300" href="/">
+              <div className="flex space-x-4">
+                <span className="icon mg">
+                  <FiHome />
+                </span>
+                <p>Homepage</p>
+              </div>
+            </Sidebar.Item>
+            <Sidebar.Item className="text-sm hover:bg-gray-300" href="/list">
+              <div className="flex space-x-4">
+                <span className="icon mg">
+                  <FiList />
+                </span>
+                <p>List</p>
+              </div>
+            </Sidebar.Item>
             <Sidebar.Item className="text-sm hover:bg-gray-300" href="/search">
               <div className="flex space-x-4">
                 <span className="icon mg">
                   <FiSearch />
                 </span>
                 <p>Search by name</p>
-              </div>
-            </Sidebar.Item>
-            <Sidebar.Item className="text-sm hover:bg-gray-300" href="#">
-              <div className="flex space-x-4">
-                <span className="icon mg">
-                  <FiFlag />
-                </span>
-                <p>Random Nation</p>
               </div>
             </Sidebar.Item>
             <Sidebar.Item className="text-sm hover:bg-gray-300" href="/about">

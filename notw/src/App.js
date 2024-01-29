@@ -3,11 +3,14 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SideBar from "./Components/Sidebar/Sidebar";
+import { useState, useEffect } from "react";
+
+// Pages
 import Home from "./Pages/Home";
 import Search from "./Pages/Search";
 import About from "./Pages/About";
-import { useState, useEffect } from "react";
 import Country from "./Pages/Country";
+import List from "./Pages/List";
 
 function App() {
   const [countries, setCountries] = useState(null);
@@ -27,11 +30,12 @@ function App() {
       {/* Sidebar */}
       <SideBar className="w-48 bg-gray-800" />
       {/* Main content */}
-      <div className="flex justify-center overflow-hidden">
+      <div className="flex justify-center overflow-hidden w-full">
         <BrowserRouter>
-          <div className="flex justify-center">
+          <div className="flex justify-center w-full overflow-auto">
             <Routes>
               <Route path="/" element={<Home Countries={countries} />} />
+              <Route path="/list" element={<List Countries={countries} />} />
               <Route
                 path="/search"
                 element={<Search Countries={countries} />}
