@@ -6,7 +6,7 @@ import { SlMap, SlShareAlt } from "react-icons/sl";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import SearchBar from "../Components/SearchBar/SearchBar";
-import { FiSearch } from "react-icons/fi";
+import { FiArrowRightCircle } from "react-icons/fi";
 
 const Home = (countries) => {
   const [rdmNumber, setRdmNumber] = useState(null);
@@ -25,10 +25,10 @@ const Home = (countries) => {
 
   return (
     <div className="w-full flex flex-col my-4 items-center">
-      <div className="flex flex-col justify-center fixed right-4 w-36 items-center border-2 border-slate-500 rounded-lg">
-        <div className="flex">
-          <Link to={`/country/${query}`} className="flex">
-            <FiSearch className="mx-2" />
+      <div className="flex flex-col justify-center fixed right-4 w-36 items-center border-2 border-slate-500 rounded-lg sm:invisible lg:visible">
+        <div className="flex ">
+          <Link to={`/country/${query}`}>
+            <FiArrowRightCircle className="my-1 mr-2" />
           </Link>
 
           <input

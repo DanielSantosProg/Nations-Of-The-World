@@ -9,7 +9,7 @@ function CarouselSlide() {
         <div className="relative text-center">
           <Link to="country/brazil" className="block relative">
             <img
-              src="https://www.tmf-group.com/globalassets/images/news-and-insights/articles/944x540-country-landscape/christ-sugar-loaf-mountain-brazil.jpg"
+              src="https://gsg-61ea.kxcdn.com/media/contents/Rio%20city%20and%20rocks%20lucas-campoi-pHnzdSAEkRM-unsplash.jpg"
               alt="Brazil"
               className="w-full h-full object-cover"
             />
